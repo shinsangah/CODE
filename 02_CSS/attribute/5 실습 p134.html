@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid red;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      box-sizing: content-box;
+      /* 대부분 보더 박스로 하고 진행한다.
+      딱봐도 귀찮음. 얘는 굳이 content-box 라고 지정 안해도
+      위에 설정해놓은 div 기본값이 이것임.*/
+    }
+
+    .border {
+      box-sizing: border-box;
+      /* 모든게 포함된 것을 지정한 박스를 맞춘다.
+      기본이 content-box 임. 앞으로 border-box */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">Content-box</div>
+  <div class="border">Border-box</div>
+</body>
+
+</html>
+
+<!--BOX SIZING-->

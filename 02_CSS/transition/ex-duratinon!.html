@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      transition: width 3s
+        /*ease-in 1s*/
+        , background-color 1s;
+      /* p.42 transition: 속성명 지속시간 타이밍함수 대기시간; 순서대로 작성 */
+    }
+
+    div:active
+
+    /* 클릭하고 있을때여야 하니까 */
+      {
+      width: 300px;
+      background-color: dodgerblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+[disabled] {
+  background-color: red;
+}
+
+/* disabled 속성을 가진 태그 선택 */
+
+[placeholder="이름"] {
+  background-color: orange;
+}
+
+/* placeholder 속성이 "이름" 값을 가지는 태그 선택 */
+
+/*
+[value] {
+  background-color: blue;
+}
+
+/* placeholder 속성을 가지지 않는 태그는 value 뿐임 */
+
+input:not([placeholder]) {
+  background-color: blue;
+}
+
+/* 위와 같이 placeholder 속성이 아닌 value를 선택해서
+쓸 수도 있지만, placeholder 속성을 가지지 않는 전부를
+문법적으로 쓰려면 not 이 떠오르는데 위와 같은 방법이 있다.
+이렇게 가상 선택자 + 속성 선택자 섞어 사용할 수 있음 */
+
+/* p.75 실습, 가상 요소 선택자 */

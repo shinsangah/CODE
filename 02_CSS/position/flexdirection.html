@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      /* flex-direction: row-reverse; */
+      /* 우에서 좌로 이동 */
+      flex-direction: column;
+      /* 좌에서 세로로 아래로 잘 쌓임 */
+      /* flex-direction: column-reverse; */
+      /* 아래부터 잘 쌓여서 올라감 */
+      background-color: dodgerblue;
+      margin-bottom: 10px;
+    }
+
+    .item1 {
+      width: 100px;
+      height: 50px;
+      background-color: orange;
+    }
+
+    .item2 {
+      width: 150px;
+      height: 100px;
+      background-color: skyblue;
+    }
+
+    .item3 {
+      width: 100px;
+      height: 200px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+
+  </div>
+</body>
+
+</html>
+
+<!-- 인라인 플렉스 -->

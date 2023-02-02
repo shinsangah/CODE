@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+      /* 커서 속성이 포인터가 되면 '손가락' 모양으로 변함
+      그래서 속성이 남아있는 채로 확인 가능 */
+      display: inline-block;
+      /* div지만 inline-block 써서 가로로 쌓이게 되도록 설정한 것임 */
+    }
+
+    .oppacity {
+      background-color: aqua;
+      opacity: 1;
+      /* 기본이 opacity 1 이지만 CSS적으로 써보신 것임 */
+      /* 모습만 숨기는 방법 / 속성 남음 / 자리 차지 */
+      /* opacity 0 이여도 속성이 남으니까 그대로 커서 손가락으로 바껴짐 */
+      /* 사실상 vis hidden, dis none으로 하는걸 많이 씀. oppacity 0 처리 잘 안함 */
+    }
+
+    .visibility {
+      background-color: greenyellow;
+      visibility: visible;
+      /* visibility: hidden; 자리는 유지하고 있는데 속성이 사라짐. 커서 손가락으로 안바뀜. */
+    }
+
+    .display {
+      background-color: dodgerblue;
+      display: none;
+      /* display: none; 방 자체를 빼버림. 그냥 없애버림!
+      자기 자리가 없어짐. 맨 끝에 last가 옴.. */
+    }
+
+    .last {
+      background-color: violet;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="oppacity">oppacity</div>
+  <div class="visibility">visibility</div>
+  <div class="display">display</div>
+  <div class="last">last</div>
+  <!-- last 항상 존재하는 div로 만들어줌-->
+</body>
+
+</html>

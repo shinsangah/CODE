@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      transition-duration: 0.5s;
+      /* 부모한테 주니 돌아갈 때도 이게 적용됨 */
+      /* hover 한테만 주면 돌아갈 때는 이 차이가 적용되지 않는다.
+      좀 더 안정적인 선택은 무조건 기본한테 효과를 주는게 낫다. */
+      /* transition-property: width, height; */
+      /* 특정 속성만을 변화하고 싶으면 쓰는데 잘 안쓴다. 보통 all. */
+      /* hover 마우스 올리고 보면 일단 색깔 먼저 바뀐다. */
+      /* transition-timing-function: linear; */
+      /* 느리게 빠르게 느리게가 아니라, 일정하게 느린다. 답답해 보이기도 한다.
+      linear는 이렇게 모든 구간의 속도 변화가 일정하게 된다. */
+      /* transition-timing-function: ease; */
+      /* 느렸다가 빨라졌다가 느려짐 */
+      /* transition-timing-function: ease-out; */
+      /* 빨랐다가 느려짐 */
+      /* transition-timing-function: ease-in-out; */
+      /* 그렇게까지 큰 차이는 안느껴지는데 느리게 - 빠르게 느리게
+      파도 타는거 할 때 이거 쓴다. */
+      transition-delay: 1s;
+      /* 마우스 올려놨을 때 시점부터 변화하기까지 1초 걸림 */
+    }
+
+    div:hover {
+      width: 400px;
+      height: 100px;
+      background-color: skyblue;
+      /* transition-duration: 2s; */
+      /* 지속 시간 주기 */
+      /* hover 한테만 주면 돌아갈 때는 이 차이가 적용되지 않는다.
+      좀 더 안정적인 선택은 무조건 기본한테 효과를 주는게 낫다. */
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@import url("./heading-style.css");
+
+/* 주석 사용방법은 여기서도 똑같다.
+링크에서 <style> 태그를 적용해버린다. */
+
+p {
+  color: lemonchiffon;
+  background-color: red;
+}
+
+span {
+  color: bisque;
+  background-color: blue;
+}

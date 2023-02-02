@@ -1,0 +1,21 @@
+.box::before {
+  content: "앞!";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+/* html 에서는 content 앞에 앞 이라는 글자가 없는데
+CSS 를 사용해서 before라는 요소를 사용해준다.
+그래서 앞에 이렇게 글자 넣어줄 수 있음 */
+
+/* 저런식으로 content 말고도 디자인적 요소 추가 가능
+스타벅스 페이지 클론할 때 한번쯤 만들어보게 될 것임*/
+
+.box::after {
+  content: "뒤!";
+}
+
+/* ex. 쇼핑몰 페이지에 메뉴에 hot, 추천 등을 넣기 위해 사용.
+즉 디자인적 요소를 넣기 위해 사용한다. */

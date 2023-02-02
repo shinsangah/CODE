@@ -1,0 +1,33 @@
+.zoo *:nth-child(2n) {
+  background-color: orange;
+}
+
+.zoo p:first-child {
+  background-color: purple;
+}
+
+/* .zoo *:first-child {
+  background-color: purple;
+} 전체에서 첫번째 이렇게 써도 됨 */
+
+.zoo *:not(.predator) {
+  background-color: green;
+}
+
+
+.zoo *:last-child {
+  background-color: red;
+}
+
+.zoo *:last-child:hover {
+  background-color: yellow;
+}
+
+
+.zoo *:nth-child(3) {
+  background-color: blue;
+}
+
+
+
+/* 실습, 가상 클래스 선택자 2 (p.64) */

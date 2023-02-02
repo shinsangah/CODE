@@ -1,0 +1,27 @@
+* {
+  color: white;
+}
+
+/* 전체 태그 */
+
+span {
+  background-color: red;
+}
+
+/* 특정 태그 하나만 */
+
+#first {
+  background-color: blue;
+}
+
+/* id 가 first 인 태그 */
+
+.second {
+  background-color: green;
+}
+
+/* class 가 second 인 태그 */
+
+/* 같은 속성에 대해서 값을 지정해주는게 아니면
+위에 선언한 것들은 그냥 다 받아온다.
+배경색만 바뀌고 글자는 전부 하얀색이다. */

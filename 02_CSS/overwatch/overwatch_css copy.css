@@ -1,0 +1,213 @@
+body {
+  background-image: url("./images/bg.jpg");
+  /* background-size: cover; */
+  /* 뷰포트 넓이에 맞춰서 이미지를 적용해준다. */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* fixed는 배경도 안움직여지고 가만히 있고 창만 움직인다. */
+}
+
+.container {
+  width: 100%;
+  /* 넓이값을 100% 줘서 body 값을 받아올 수 있도록 처리해준다. */
+}
+
+.container .heroes {
+  display: flex;
+  /* shrik 때문에 강제로 꾸겨넣어짐 wrap 없으면 */
+  flex-wrap: wrap;
+  /* 삐져나갈 것 같으면 자동으로 줄바꿈 해준다. */
+  justify-content: center;
+  /* 주축 (x축) 에 대한 방향 중앙으로 정렬 */
+  max-width: 700px;
+  /* 700에서 더 줄게 되면 100% 받아들이게 되고 알아서 움직인다.
+  flex의 장점을 받아줌. */
+  padding: 40px 20px;
+  /* 상하 40px 좌우 20px */
+  margin: auto;
+  /* 오토는 브라우저가 계산해주니까 브라우저가 계산 가능한지 체크,
+  .heroes 에 가로폭 지정되어있어서 계산 됨 (패딩까지 740px) 화면에 넓이값 얘가 계산함.
+  뷰포트 넓이 브라우저가 계산 가능, 뷰포트 넓이에서 빼줘서 마진 오토로 수평 중앙정렬 가능해짐. */
+}
+
+.container .heroes .hero {
+  width: 80px;
+  height: 90px;
+  margin: 4px;
+  border: 3px solid white;
+  transform: skewX(-14deg);
+  border-radius: 10px;
+  background-color: gray;
+  overflow: hidden;
+  /* image 자식 태그에 모서리 좀 튀어나온 사진 숨겨지는거 overflow: hidden; */
+
+}
+
+.container .heroes .hero:hover {
+  transform: skew(-14deg) scale(1.3);
+  background-color: gray;
+  border-color: white;
+  z-index: 1;
+  /* (나머지는 0일테니까 hover 한테만 z-index 1 줌) */
+  transition: transform 0.1s, background-color .5s;
+  border-color 0.5s;
+  /* 축약으로 0.5s 0 빼고 .5s 만 써도 작용됨. */
+}
+
+.container .heroes .hero .image {
+  width: 140%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: skew(14deg) translateX(-10px);
+}
+
+.container .heroes .hero:nth-child(1) .image {
+  background-image: url("./images/hero1.png");
+}
+
+.container .heroes .hero:nth-child(2) .image {
+  background-image: url("./images/hero2.png");
+}
+
+.container .heroes .hero:nth-child(3) .image {
+  background-image: url("./images/hero3.png");
+}
+
+.container .heroes .hero:nth-child(4) .image {
+  background-image: url("./images/hero4.png");
+}
+
+.container .heroes .hero:nth-child(5) .image {
+  background-image: url("./images/hero5.png");
+}
+
+.container .heroes .hero:nth-child(6) .image {
+  background-image: url("./images/hero6.png");
+}
+
+.container .heroes .hero:nth-child(7) .image {
+  background-image: url("./images/hero7.png");
+}
+
+.container .heroes .hero:nth-child(8) .image {
+  background-image: url("./images/hero8.png");
+}
+
+.container .heroes .hero:nth-child(9) .image {
+  background-image: url("./images/hero9.png");
+}
+
+.container .heroes .hero:nth-child(10) .image {
+  background-image: url("./images/hero10.png");
+}
+
+.container .heroes .hero:nth-child(11) .image {
+  background-image: url("./images/hero11.png");
+}
+
+.container .heroes .hero:nth-child(12) .image {
+  background-image: url("./images/hero12.png");
+}
+
+.container .heroes .hero:nth-child(13) .image {
+  background-image: url("./images/hero13.png");
+}
+
+.container .heroes .hero:nth-child(14) .image {
+  background-image: url("./images/hero14.png");
+}
+
+.container .heroes .hero:nth-child(15) .image {
+  background-image: url("./images/hero15.png");
+}
+
+.container .heroes .hero:nth-child(16) .image {
+  background-image: url("./images/hero16.png");
+}
+
+.container .heroes .hero:nth-child(17) .image {
+  background-image: url("./images/hero17.png");
+}
+
+.container .heroes .hero:nth-child(18) .image {
+  background-image: url("./images/hero18.png");
+}
+
+.container .heroes .hero:nth-child(19) .image {
+  background-image: url("./images/hero19.png");
+}
+
+.container .heroes .hero:nth-child(20) .image {
+  background-image: url("./images/hero20.png");
+}
+
+.container .heroes .hero:nth-child(21) .image {
+  background-image: url("./images/hero21.png");
+}
+
+.container .heroes .hero:nth-child(22) .image {
+  background-image: url("./images/hero22.png");
+}
+
+.container .heroes .hero:nth-child(23) .image {
+  background-image: url("./images/hero23.png");
+}
+
+.container .heroes .hero:nth-child(24) .image {
+  background-image: url("./images/hero24.png");
+}
+
+.container .heroes .hero:nth-child(25) .image {
+  background-image: url("./images/hero25.png");
+}
+
+.container .heroes .hero:nth-child(26) .image {
+  background-image: url("./images/hero26.png");
+}
+
+.container .heroes .hero:nth-child(27) .image {
+  background-image: url("./images/hero27.png");
+}
+
+.container .heroes .hero:nth-child(28) .image {
+  background-image: url("./images/hero28.png");
+}
+
+.container .heroes .hero:nth-child(29) .image {
+  background-image: url("./images/hero29.png");
+}
+
+.container .heroes .hero:nth-child(30) .image {
+  background-image: url("./images/hero30.png");
+}
+
+.container .heroes .hero:nth-child(31) .image {
+  background-image: url("./images/hero31.png");
+}
+
+.container .heroes .hero:nth-child(32) .image {
+  background-image: url("./images/hero32.png");
+}
+
+
+.container img {
+  display: block;
+  max-width: 300px;
+  /* 아무리 커져봤자 300px이 한계다. */
+  width: 100%;
+  /* 컨테이너 크기가 줄어들 때 그 크기를 받아온다. */
+  margin: auto;
+  /* 수평 정렬의 경우 마진 오토를 줘도 된다. */
+  /* 이미지는 인라인 요소임. 사진이랑 글 같이 넣는애라 공간을 차지하고 있어서 블록처럼 보이지만
+  인라인 요소이다. 인라인은 크기값을 제대로 지정해주지 못한다. 그래서 display: block; 변경해야 함
+  이렇게 변경해야 margin auto 로 변경이 됨*/
+
+  /* 이렇게 복잡한거 싫다 하면 다른방법 컨테이너로!
+  마지막 이미지 태그 div에 넣어주고 클래스 주고 나서..
+  하지만 강사님 올드한 방식으로 진행한거임 마진 주고. */
+}
+
+/* 강사님과 같이한 것 */
+/* 오버워치 화면 만들기 */

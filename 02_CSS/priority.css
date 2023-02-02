@@ -1,0 +1,28 @@
+/*
+#item {
+  background-color: red !important;
+}
+*/
+
+/* id 선택자 100점 */
+/* 인라인 요소로 style = background-color: orange 설정하면 인라인 요소가 이김 */
+/* 다시 CSS 에서 !important 추가 하니, 이게 이김
+important는 누가 와도 이긴다. 인라인은 important 제외하고 누가 와도 이긴다. */
+
+.list {
+  background-color: orange;
+}
+
+#item {
+  background-color: skyblue;
+}
+
+li {
+  background-color: red;
+}
+
+* {
+  background-color: dodgerblue;
+}
+
+/* 전체 선택자는 겹치지 않으면 같이 간다. */

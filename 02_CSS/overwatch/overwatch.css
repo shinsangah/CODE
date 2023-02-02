@@ -1,0 +1,18 @@
+.heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: orange;
+  width: 700px;
+  padding: 50px;
+}
+
+.hero {
+  width: 80px;
+  height: 90px;
+  margin: 4px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #999;
+  transform: skew(-14deg);
+}

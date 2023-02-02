@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 3000px;
+      /* scroll 발생 시켜야 하니까 뷰포트 이상으로 줌 */
+    }
+
+    div {
+      position: fixed;
+      /* width: 150px; */
+      /* height: 200px; */
+      border: 1px solid black;
+      /* 가장 기본적인 테두리를 줬다 */
+      background-image: url("https://item.kakaocdn.net/do/4b5e3caaa5e3bedb9abe7b1b5ae3a4789f5287469802eca457586a25a096fd31");
+      top: 20px;
+      right: 30px;
+      /* 오른쪽 상단에 치우쳐져있음 */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-position: 0px 40px; */
+      /* background-position: bottom; */
+      /* 값을 2개 주거나 1개 주거나 된다 */
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div>따라다니기!</div>
+</body>
+
+</html>
+
+<!-- p.82 실습, 동일한 것 만들기 -->

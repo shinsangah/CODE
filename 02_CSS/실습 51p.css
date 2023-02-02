@@ -1,0 +1,52 @@
+p.lion {
+  background-color: red;
+}
+
+/* 동물원 밖의 사자만 선택, 배경을 빨간색 */
+/* 일치 선택자 활용 (띄어쓰기 붙임), p 태그면서 class가 lion */
+
+.zoo>ul>.lion {
+  background-color: green;
+  ;
+}
+
+/* 사파리 안의 사자만 선택, 배경을 초록색 */
+/* ul 태그의 직계 자식들 중에서 class 가 lion */
+/* CSS는 구체화 시켜서 적는게 좋음 (그래서 div class의 zoo 추가) */
+
+#tiger {
+  background-color: yellow;
+}
+
+/* 호랑이만 선택, 배경을 노란색 */
+/* id가 tiger 인것만 선택 */
+
+.lion {
+  color: white
+}
+
+/* 사자를 전부 선택, 글자는 하얀색 */
+/* class 기본 선택자 lion 인것만 선택 */
+
+.zoo .lion {
+  font-weight: bold;
+}
+
+/* 동물원 안의 사자만 선택, 폰트를 두껍게 */
+/* 후손 선택자 사용 (띄어쓰기 주의), calss가 lion 인 것 선택 */
+
+#tiger+li {
+  background-color: skyblue;
+}
+
+/* 호랑이 뒤에 있는 팬더 선택 */
+/* id tiger 뒤에 있는 인접 형제 선택자 */
+
+div.zoo>ul>.lion~li {
+  background-color: orange;
+}
+
+/* 사파리 사자 뒤에 있는 사육사를 모두 선택, 배경을 오렌지색 */
+/* class lion 태그에서 인접 형제 ~ 물결 표시 태그 선택 */
+/* 최대한 구체적으로 적어야 해서 div.zoo>ul> 추가
+ul 부터만 적어도 되기는 되는데 최대한 구체적으로 하려고 */

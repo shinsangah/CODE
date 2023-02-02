@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      display: flex;
+      list-style: none;
+      /* none 안주면 자기 멋대로 차례대로 점 생김 */
+      padding-left: 0px;
+      /* 기본적으로 패딩이 들어가있어서 빼주는거임.
+      그래야 디자인 요소 마음대로 컨트롤 가능하다. */
+      background-color: #999;
+      /* 숫자가 클수록 연해진다. 0 부터 fff 까지 16진수로 갈수록
+      그래서 grey 쓰고 싶으면 보통 #999 로 설정.*/
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    li {
+      text-align: center;
+      flex-basis: 100px;
+      /* 100px 보다 컨텐츠가 작을거니까 왼쪽에 있음 */
+      /* min-width 로 할 수 없는 기능을 얘네는 함 */
+      flex-grow: 1;
+      /* 1만 지정해주어 컨테이너 넓이에 따라 공간을 알아서 분배해서 차지함*/
+      flex-shrink: 0;
+      /* shrink를 0으로 설정 안해주면 한없이 줄어든다.
+      그래서 shrink 0을 지정해주어야 함. */
+      font-weight: 700;
+      color: #eee;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>메뉴1</li>
+    <li>메뉴2</li>
+    <li>메뉴3</li>
+    <li>메뉴4</li>
+  </ul>
+</body>
+
+</html>
+
+<!-- flex 실습 -->

@@ -1,0 +1,11 @@
+.orange {
+  color: orange;
+}
+
+/* class 인 orange만 */
+
+span.orange {
+  background-color: skyblue;
+}
+
+/* span 태그 와 class 인 orange 연달아 써주기 */

@@ -1,0 +1,12 @@
+@import url("./import-실습.css");
+
+p {
+  color: white;
+  background-color: red;
+}
+
+h3 {
+  color: lemonchiffon;
+  /** 일부로 white 컬러로 안해봄 **/
+  background-color: black;
+}

@@ -1,0 +1,19 @@
+a:hover {
+  color: red;
+}
+
+/* 위에 마우스 커서가 올라가있는동안 빨간색으로 변함 */
+
+a:active {
+  background-color: orange;
+}
+
+/* 마우스 뗴면 작동안함. 클릭하고 있는 동안에 작동 */
+
+input:focus {
+  background-color: orange;
+}
+
+/* 사용자가 뭔가를 해야 불러와 진다.
+빈 칸에 마우스 한 번 누르니 배경색이 변경됨
+뭔가를 입력하려고 하면 배경색이 변경됨 */

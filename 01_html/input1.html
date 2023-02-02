@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select name="menu">
+    <optgroup label="coffee">
+      <option value="americano">아메리카노</option>
+      <option value="latte">라떼</option>
+      <option value="cappuccino"disabled>카푸치노</option>
+    </optgroup>
+    <optgroup label="other">
+      <option value="lemonade">레모네이드</option>
+      <option value="hotchoco">핫쵸코</option>
+      <option value="smoothie" selected>스무디</option>
+    </optgroup>
+  </select>
+  <br />
+  <input type="radio" name="flash" value="t" /> T 점멸
+  <!-- 같은 flash 네임이라 위치 바껴도 하나만 클릭됨.
+  하지만 이렇게 만들면 사용자에게 욕먹기 때문에 안됨.-->
+  <input type="button" value="클릭해 주세요"/>
+  <button>Click</button>
+  <br />
+  <input type="text" />
+  <!-- value="placeholder" 는 회색으로 밑바닥에 깔려있는데 칸에 쓰면 없어짐-->
+  <!-- value="고정값" 써도 변경됨-->
+  <br />
+  <input type="password">
+  <br />
+  <input type="checkbox" name="menu" value="coffee" /> 커피
+  <input type="checkbox" name="menu" value="tea" /> 차
+  <input type="checkbox" name="menu" value="smoothie" checked /> 스무디
+  <!-- chekced 체크가 되어있는 상태로 뜸-->
+  <br />
+  <input type="radio" name="flash" value="f" /> F 점멸
+  <input type="radio" name="flash" value="d" checked /> D 점멸
+  <!-- flash 1, 2 네임이 다르기 때문에 둘 다 선택 가능함
+  그래서 네임값을 통일로 잘 하는 것이 중요하다. 라디오버튼은 하나의 값만 선택 잘 선택해야해.-->
+  <br />
+  <input type="date" name="datetime" />
+  <br />
+  <input type="datetime-local" name="local-time" />
+   <!-- 자기 os 상황에 따라 시차 등 달라짐-->
+  <br />
+  <input type="color" />
+
+</body>
+</html>

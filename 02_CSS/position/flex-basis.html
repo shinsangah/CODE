@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      width: 700px;
+      height: 500px;
+      background-color: dodgerblue;
+    }
+
+    div {
+      height: 100px;
+      background-color: orange;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: 100px;
+      /* 무조건 차지해야 하는 basis 영역 100 3 아이템이 각각 300 먹어서 */
+    }
+
+    .item1 {
+      flex-grow: 1;
+    }
+
+    .item2 {
+      flex-grow: 1;
+    }
+
+    .item3 {
+      flex-grow: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div calss="item1">111111</div>
+    <div calss="item1">2</div>
+    <div calss="item1">3</div>
+  </div>
+</body>
+
+</html>

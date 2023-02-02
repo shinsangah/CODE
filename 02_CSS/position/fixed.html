@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      position: relative;
+      height: 3000px;
+    }
+
+    .child1 {
+      width: 150px;
+      height: 100px;
+      background-color: yellow;
+      position: absolute;
+    }
+
+    .child2 {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      width: 200px;
+      height: 150px;
+      background-color: orange;
+      /* 스크롤 내려도 고정되서 따라 내려옴! */
+    }
+
+    .child3 {
+      width: 150px;
+      height: 200px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- fixed -->

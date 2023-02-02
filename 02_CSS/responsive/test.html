@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: orange;
+    }
+
+    @media screen and (max-width: 500px)
+
+    /* 모바일용 CSS 보통 480px로 쓴다.*/
+    /* max-width: 500px 이하가 되면 이렇게 컬러가 변한다.
+    헤더메뉴가 버거 메뉴로 바뀌는 등 다양한 방법으로 활용. */
+      {
+      body {
+        background-color: skyblue;
+      }
+    }
+
+    @media screen and (max-height: 300px) {
+      body {
+        background-color: tomato;
+      }
+    }
+
+    /* Diemension: responsive 반응형으로 만들고
+    거기서 마음껏 줄일 수 있음.
+    보통 width 를 많이 씀. height 잘 안씀. */
+  </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

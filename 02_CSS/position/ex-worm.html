@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .body1 {
+      position: absolute;
+      /* 부모 요소에서 마음대로 왔다 갔다 시켜야 될 것 같으니까 */
+      /* body1 이라는 친구를 기준으로 이동하고 있다. */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: dodgerblue;
+    }
+
+    .body1>.eye {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white;
+      top: 20px;
+      left: 20px;
+    }
+
+    .body1>.eye::after {
+      /* 아무것도 안넣으니까 빈 문자칸 */
+      /* 아무리 속성이 있어도 content가 있어야 까만 눈동자 생김 */
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: black;
+      top: 7px;
+      left: 1px;
+    }
+
+    .body2 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: blue;
+      top: 50px;
+      left: 70px;
+      z-index: 1;
+    }
+
+    .body3 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: blueviolet;
+      top: 100px;
+      left: 130px;
+      z-index: 2;
+    }
+
+    .body4 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: green;
+      top: 100px;
+      left: 180px;
+      z-index: 3;
+    }
+
+    .body5 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: tomato;
+      top: 100px;
+      left: 230px;
+      z-index: 4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body1">
+    <div class="eye"></div>
+    <!-- 자식 요소는 무조건 부모 위에 올라가기 때문에 -->
+  </div>
+  <div class="body2"></div>
+  <div class="body3"></div>
+  <div class="body4"></div>
+  <div class="body5"></div>
+</body>
+
+</html>
+
+<!-- 요소 쌓임 순서 <Stack order)
+어떤 요소가 사용자와 더 가깝게 있는지 (위에 쌓이는지) 결정
+1. 요소에 position 속성의 값이 있는 경우 위에 쌓임. (기본값 static 제외)
+2. 1번 조건이 같은 경우, z-index 속성의 숫자 값이 높을수록 위에 쌓임.
+3. 1번과 2번 조건까지 같은 경우, HTML의 다음 구조일수록 위에 쌓임.
+이 애벌레도 3번과 같은 이유로 .body2~.body5 굳이 z-index 없어도 잘 쌓인다. -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      background-color: dodgerblue;
+    }
+
+    .child1 {
+      position: relative;
+      width: 150px;
+      height: 100px;
+      background-color: yellow;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .child2 {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 250px;
+      height: 150px;
+      background-color: orange;
+    }
+
+    .child3 {
+      position: absolute;
+      bottom: 20px;
+      width: 150px;
+      height: 200px;
+      background-color: tomato;
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+    <!-- html요소 상으로 3번이 제일 늦다.
+      html 구조 상으로 늦기 때문에 z-index 999로 같더라도 3번이 위에 뜸 -->
+  </div>
+
+</body>
+
+</html>
+
+<!-- fixed -->

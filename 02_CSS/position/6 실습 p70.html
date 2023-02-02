@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      /* 이것이 제일 중요. 위치 값을 지정할 수 있게 되는 것임. */
+      width: 100px;
+      height: 50px;
+      background-color: orange;
+      border: 1px solid black;
+      /* 실제로 상자 두께 보더 두께 1px 추가 됨 */
+      /* 제대로 사이즈 하려면 box-sizing:border-box 지정해야 함 */
+    }
+
+    .child1 {
+      left: 200px;
+    }
+
+    .child2 {
+      left: 150px;
+    }
+
+    .child3 {
+      left: 100px;
+    }
+
+    .child4 {
+      left: 50px;
+    }
+
+    /* 남이 읽을 때 좋아하지 않을거니까
+    1, 2, 3, 4, 5 순서대로 해놔야 함 */
+  </style>
+</head>
+
+<body>
+  <div class="child1">1</div>
+  <div class="child2">2</div>
+  <div class="child3">3</div>
+  <div class="child4">4</div>
+  <div class="child5">5</div>
+</body>
+
+</html>
+
+<!-- p.70 실습, 동일한 것 만들기 -->

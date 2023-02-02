@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Tetz 카페</h1>
+    주문자 이름을 입력하세요
+    <input type="text" />
+    <br />
+    <hr />
+  </div>
+  <div id="group-order">
+    <h2>단체 주문</h2>
+    <input type="checkbox" name="group" value="coffee" /> 커피
+    <!-- name ="" 끼리 동일해야 묶어짐-->
+    <input type="checkbox" name="group" value="tea" /> 차
+    <input type="checkbox" name="group" value="latte" /> 라떼
+    <p>주문 날짜 입력</p>
+    <input type="date" />
+    <br />
+    <hr />
+  </div>
+  <div id="individual-order">
+    <h2>개별 주문</h2>
+    <input type="radio" name="individual" value="coffee" /> 커피
+    <!-- radio는 name ="" 더더욱 동일해야함. 중복선택 되면 안되니까
+      위에 checkbox랑 이름 같으면 안됨-->
+    <input type="radio" name="individual" value="tea" /> 차
+    <input type="radio" name="individual" value="latte" /> 라떼
+    <p>주문 날짜 및 시간 입력</p>
+    <input type="datetime-local" />
+    <br />
+    <hr />
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.fruits span:first-child {
+  color: red;
+}
+
+/* fruit 이라는 클래스 안에서 첫번째 span 태그인 자식 */
+
+.fruits h3:last-child {
+  color: blue;
+}
+
+/* fruit 이라는 클래스 안에서 h3 태그에서 막내인 자식 */
+
+.fruits *:nth-child(3) {
+  color: pink;
+}
+
+/* n번째 자식, 섞여있어서 모르니까 전체인 * 누르고,
+태그에 상관 없이 2번째 자식 고르겠다 하면 이렇게. */
+
+.fruits *:nth-child(2n) {
+  color: skyblue
+}
+
+/* 짝수나 홀수번만 선택하고 싶으면
+(2n) = 짝수번
+(2n+1) 홀수번
+n은 무조건 0임. 컴퓨터는 제로베이스임! */
+
+.fruits *:nth-child(2n+1) {
+  color: brown;
+}
+
+/* 짝수나 홀수번만 선택하고 싶으면
+(2n) = 짝수번
+(2n+1) 홀수번
+n은 무조건 0임. 컴퓨터는 제로베이스임! */
+
+/* 맨 위에 h3:last-child 가 작용함 */
+
+.fruits *:not(span) {
+  color: violet;
+}
+
+/* 다 고를건데 span 태그가 '아닌것만' 해주세요!
+class인 경우 not(.span) / id인 경우 not(#span)
+그냥 태그명만 옆에 아무것도 안붙음 not(span) */

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: block;
+      /* div 니까 기본 속성 block 임을 알고 있기 */
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      /* 설사 border-color 를 줬어도
+      style과 두께값이 none 이여서
+      boder-color 줘도 안뜨는거임! */
+    }
+
+    div:hover {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>
+
+<!--p.143 실습 display: none
+블록과 none 요소 체크!-->

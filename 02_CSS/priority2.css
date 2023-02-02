@@ -1,0 +1,31 @@
+/*
+
+.list li.item {
+  background-color: orange;
+}
+
+21점
+
+body .list li:first-child {
+  background-color: skyblue;
+}
+
+22점 */
+
+.list li:first-child {
+  background-color: skyblue;
+}
+
+/* 21점 (가상클래스:first-child 10점) */
+
+.list li.item {
+  background-color: orange;
+}
+
+/* 21점 */
+
+
+/* 점수가 같으면 늦게 쓰이는 애가 이긴다!
+되도록 이런 상황은 실제로 피해야 한다.
+정 그러면 그냥 오른쪽에 important 추가해야 한다. 
+아예 순서를 먼저 나누고 디자인을 입히는게 좋다. */

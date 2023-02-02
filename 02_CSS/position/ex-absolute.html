@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+      font-size: 4rem;
+    }
+
+    div {
+      position: absolute;
+      /* absoulte는 부모 참조해야 하는데 없어서
+      올라가서 올라가서 html 참조, 포지션 없기 떄문에 */
+      width: 10rem;
+      height: 10rem;
+      /* 선택자 우선순위 사용 div 1점 / 클래스 선택자 10점
+      같은 요소를 건드리고 있으면 tricky하게 사용 */
+    }
+
+    .child1 {
+      width: 20rem;
+      height: 20rem;
+      background-color: orange;
+      /* postion 값 주지 않고 왼쪽 구석 위에 붙어있으면 됨 */
+    }
+
+    .child2 {
+      background-color: skyblue;
+      left: 10rem;
+    }
+
+    .child3 {
+      background-color: tomato;
+      left: 20rem;
+      top: 20rem;
+    }
+
+    .child4 {
+      background-color: dodgerblue;
+      left: 30rem;
+      top: 10rem;
+    }
+
+    .child5 {
+      background-color: dodgerblue;
+      top: 10rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="child1">1</div>
+  <div class="child2">2</div>
+  <div class="child3">3</div>
+  <div class="child4">4</div>
+  <div class="child5">5</div>
+</body>
+
+</html>
+
+<!-- p.78 실습, 동일한 것 만들기!-->
