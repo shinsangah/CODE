@@ -2,6 +2,7 @@ body {
   background-image: url("./images/bg.jpg");
   /* background-size: cover; */
   /* 뷰포트 넓이에 맞춰서 이미지를 적용해준다. */
+  /* 화면 너비 작게 줄이면 배경이미지도 같이 줄어듦. 화질 나빠질수도 */
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* fixed는 배경도 안움직여지고 가만히 있고 창만 움직인다. */
@@ -14,7 +15,7 @@ body {
 
 .container .heroes {
   display: flex;
-  /* shrik 때문에 강제로 꾸겨넣어짐 wrap 없으면 */
+  /* shrik 때문에 강제로 꾸겨넣어짐. wrap 없으면 */
   flex-wrap: wrap;
   /* 삐져나갈 것 같으면 자동으로 줄바꿈 해준다. */
   justify-content: center;
@@ -39,7 +40,8 @@ body {
   border-radius: 10px;
   background-color: gray;
   overflow: hidden;
-  /* image 자식 태그에 모서리 좀 튀어나온 사진 숨겨지는거 overflow: hidden; */
+  /* image 자식 태그에 모서리 좀 튀어나온 사진
+  그 부분 아래로 숨겨지는거 overflow: hidden; */
 
 }
 
@@ -191,7 +193,6 @@ body {
   background-image: url("./images/hero32.png");
 }
 
-
 .container img {
   display: block;
   max-width: 300px;
@@ -200,14 +201,13 @@ body {
   /* 컨테이너 크기가 줄어들 때 그 크기를 받아온다. */
   margin: auto;
   /* 수평 정렬의 경우 마진 오토를 줘도 된다. */
-  /* 이미지는 인라인 요소임. 사진이랑 글 같이 넣는애라 공간을 차지하고 있어서 블록처럼 보이지만
-  인라인 요소이다. 인라인은 크기값을 제대로 지정해주지 못한다. 그래서 display: block; 변경해야 함
-  이렇게 변경해야 margin auto 로 변경이 됨*/
+  /* 이미지는 인라인 요소임. 사진이랑 글 같이 넣는 애라 공간을 차지하고 있어서
+  블록처럼 보이지만 인라인 요소이다. 인라인은 크기값을 제대로 지정해주지 못한다.
+  그래서 display: block; 변경해야 함. 이렇게 변경해야 margin: auto; 로 변경이 됨*/
 
   /* 이렇게 복잡한거 싫다 하면 다른방법 컨테이너로!
   마지막 이미지 태그 div에 넣어주고 클래스 주고 나서..
-  하지만 강사님 올드한 방식으로 진행한거임 마진 주고. */
+  하지만 강사님 올드한 방식으로 진행한거임. 마진 주고. */
 }
 
-/* 강사님과 같이한 것 */
-/* 오버워치 화면 만들기 */
+/* 오버워치 화면 만들기 (정답) */

@@ -1,4 +1,8 @@
-.heroes {
+.container {
+  width: 100%
+}
+
+.container .heroes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,7 +11,7 @@
   padding: 50px;
 }
 
-.hero {
+.container .heroes .hero {
   width: 80px;
   height: 90px;
   margin: 4px;
