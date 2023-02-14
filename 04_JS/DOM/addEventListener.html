@@ -1,0 +1,48 @@
+<!-- onclick -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box1" onclick="test()">1</div>
+  <div class="box2" onclick="changeColor()">2</div>
+  <div class="add">3</div>
+  <input type="text" />
+</body>
+<script>
+  function test() {
+    alert("클릭!");
+  }
+
+  function changeColor() {
+    const box2 = document.querySelector('.box2');
+    box2.setAttribute("style", "background-color: orange")
+  }
+
+  const addEvendBox = document.querySelector(".add");
+  addEvendBox.addEventListener("click", function () {
+    alert("이벤트 리스너 발동!");
+  })
+
+  // alert 띄우는 2가지 방법
+  // onclick / 특정 요소를 선택한 다음에 걔한테 add 이벤트리스너를 걸어주는 방식
+
+  const inputEl = document.querySelector("input");
+  inputEl.addEventListener("focus", function () {
+    alert("포커스 온!");
+  });
+
+  inputEl.addEventListener("blur", function () {
+    alert("포커스 아웃");
+  });
+
+</script>
+
+</html>

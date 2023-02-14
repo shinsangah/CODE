@@ -1,0 +1,31 @@
+<!-- onclick -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box1" onclick="test()">1</div>
+  <div class="box2" onclick="changeColor()">2</div>
+  <!-- border 치면, 지금은 쓰지 말라고 빨간색 뜨는건데 구분 위해 일단 쓰다가 지움 -->
+</body>
+<script>
+  function test() {
+    alert("클릭!");
+  }
+
+  function changeColor() {
+    const box2 = document.querySelector('.box2');
+    box2.setAttribute("style", "background-color: orange")
+  }
+
+  // 이렇게 html 요소에 javascript 함수를 다양하게 걸어줄 수 있다.
+</script>
+
+</html>
