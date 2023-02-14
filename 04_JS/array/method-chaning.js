@@ -1,5 +1,5 @@
-// 메소드 체이닝
-// split은 코테할 때 꽤 많이 쓴다.
+// // 메소드 체이닝
+// // split은 코테할 때 꽤 많이 쓴다.
 
 // --> Hello
 let hellotest = "H-e-l-l-o";
@@ -7,7 +7,7 @@ let helloTestArr = hellotest.split("-")
 // let helloTestArr = hellotest.split("l")
 
 // 하이픈을 잘라주는 기능을 해주는 것
-// array 기능을 사용해서 잘라준다.
+// array (배열) 기능을 사용해서 잘라준다.
 console.log(helloTestArr);
 // [ 'H', 'e', 'l', 'l', 'o' ]
 
@@ -21,8 +21,7 @@ console.log(resultStr);
 // olleH
 
 // split에 반대되는 기능인 join
-// 위에 하이픈 뺀거를 join 합쳐줄거야 아무것도 안들어간걸로! ""
-// let HelloStr = helloTestArr.join("");
+// 위에 하이픈 뺀거를 join 합쳐줄거야. 아무것도 안들어간걸로! ""
 let HelloStr = helloTestArr.join("*");
 // o*l*l*e*H
 console.log(HelloStr)
@@ -47,7 +46,7 @@ console.log(testStr)
 
 let testStr = obj.number.reverse().join("")
 console.log(testStr)
-// number 는 숫자에 reverse 못거니까 에러 뜬다. 숫자에는 reverse 못걸어요.
+// number 는 숫자에 reverse 못거니까 에러 뜬다. 숫자에는 reverse 못걸고, '배열'에만 쓸 수 있다.
 // 메소드 체이닝은 무엇이 남는지, 남는 애한테 어떤 메소드를 걸 수 있는지 확인하고 거셔야 함.
 
 let testStr = obj.str.reverse().join("")
@@ -59,6 +58,7 @@ console.log(testStr)
 let testStr = obj.str?.reverse().join("")
 console.log(testStr)
 // undefined 라고 뜬다.
+
 // 그래서 물음표 같은게 있다. 앞이 undefined 라서 해주는거
 // 긴가민가할 때 ? 같은거 써주면 도움이 된다.물음표에서 코드가 멈춘다.
 // 트라이캐치라는 게 있다. 이런것도 있다 정도 알아두면 좋음.

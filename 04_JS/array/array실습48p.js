@@ -25,3 +25,12 @@ console.log(kdt);
 for (let i = 0; i < kdt.length; i++) {
   console.log(`kdt 3번째 열의 ${i + 1}번째 사람은 ${kdt[i]} 입니다`);
 }
+
+let days = ['월', '화', '수'];
+for (let index = 0; index < days.length; index++) {
+  console.log(days[index]);
+}
+
+// 월
+// 화
+// 수

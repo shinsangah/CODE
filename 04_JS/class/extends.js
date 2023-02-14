@@ -1,33 +1,33 @@
 // // 상속, 기존의 틀을 토대로 다른 틀을 만들자!
 
 // // 클래스 선언
-// class Car {
-//   // 생성자 전달
-//   constructor(brand, color) {
-//     this.brand = brand;
-//     this.color = color;
-//   } // 메소드 선언
+class Car {
+  // 생성자 전달
+  constructor(brand, color) {
+    this.brand = brand;
+    this.color = color;
+  } // 메소드 선언
 
-//   drive() {
-//     console.log(`${this.brand}의 ${this.color}색 자동차가 주행 중입니다.`)
-//   }
-// }
+  drive() {
+    console.log(`${this.brand}의 ${this.color}색 자동차가 주행 중입니다.`)
+  }
+}
 
 // // 클래스 상속
-// class ElecCar extends Car {
-//   constructor(brand, color, fuel) {
-//     super(brand, color);
-//     this.fuel = fuel;
-//   }
+class ElecCar extends Car {
+  constructor(brand, color, fuel) {
+    super(brand, color);
+    this.fuel = fuel;
+  }
 
-//   showFuel() {
-//     console.log(`해당 자동차는 ${this.fuel}의 힘으로 움직입니다.`);
-//   }
-// };
+  showFuel() {
+    console.log(`해당 자동차는 ${this.fuel}의 힘으로 움직입니다.`);
+  }
+};
 
-// const tesla = new ElecCar('tesla', 'green', 'electricity')
-// tesla.drive(); // tesla의 green색 자동차가 주행 중입니다.
-// tesla.showFuel(); // 해당 자동차는 electricity의 힘으로 움직입니다.
+const tesla = new ElecCar('tesla', 'green', 'electricity')
+tesla.drive(); // tesla의 green색 자동차가 주행 중입니다.
+tesla.showFuel(); // 해당 자동차는 electricity의 힘으로 움직입니다.
 
 
 // 오버라이딩 (over-riding)
@@ -47,24 +47,24 @@
 
 // // 클래스 상속
 
-// class ElecCar extends Car {
-//   constructor(brand, color, fuel) {
-//     super(brand, color);
-//     this.fuel = fuel;
-//   }
+class ElecCar extends Car {
+  constructor(brand, color, fuel) {
+    super(brand, color);
+    this.fuel = fuel;
+  }
 
-//   drive() {
-//     console.log(`${this.brand}의 ${this.color}색 자동차가 ${this.fuel}의 힘으로 움직입니다.`);
-//   }
-// };
+  drive() {
+    console.log(`${this.brand}의 ${this.color}색 자동차가 ${this.fuel}의 힘으로 움직입니다.`);
+  }
+};
 
-// const hyundai = new Car('hyundai', 'blue')
-// hyundai.drive(); // hyundai의 blue색 자동차가 주행 중입니다.
+const hyundai = new Car('hyundai', 'blue')
+hyundai.drive(); // hyundai의 blue색 자동차가 주행 중입니다.
 
-// const tesla = new ElecCar('tesla', 'green', 'electricity')
-// tesla.drive(); // tesla의 green색 자동차가 electricity의 힘으로 움직입니다.
+const tesla = new ElecCar('tesla', 'green', 'electricity')
+tesla.drive(); // tesla의 green색 자동차가 electricity의 힘으로 움직입니다.
 
-// // 같은 drive 메소드를 출력했지만, 이렇게 서로 다르다!
+// 같은 drive 메소드를 출력했지만, 이렇게 서로 다르다!
 
 
 // super
@@ -112,4 +112,5 @@ tesla.showSpec();
 
 console.log(hyundai instanceof Car) //true
 console.log(tesla instanceof Car) //true
+
 // 상속을 받아도 걔는 부모요소를 기억하고 있다.

@@ -19,8 +19,6 @@ let sayHello = function () {
 // 굳이 this를 안써도 되는 함수일 경우에는 화살표 함수가 권장,
 // 2015년 이후에는 this가 필요없는 경우에는 많이 쓰인다!
 
-
-
 const boy = {
   name: "Mike",
   sayHello,
