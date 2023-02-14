@@ -1,0 +1,69 @@
+<!-- 강사님 실습 P88 파일
+  ' ex-onclick-addEvent html ' -->
+
+<!-- Onclick X addEventListener -->
+<!-- 실습 -->
+<!--
+• .box1 를 최초 클릭하면 배경을 orange 색으로 변경하기
+• .box1 를 다시 클릭 했을 때 배경이 orange 색이면 skyblue 로 변경 하거나 skyblue 면 orange 로 변경하는 페이지 만들기
+• 색상 변경은 CSS 를 이용하시면 됩니다 !
+• 해당 실습을 addEventListener 와 onclick 으로 각각 구현하기! (box1, box2)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .orange {
+      background-color: orange;
+    }
+
+    .skyblue {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1" onclick="checkColor();">1</div>
+  <div class="box2">2</div>
+</body>
+<script>
+  const boxOne = document.querySelector(".box1");
+  const boxTwo = document.querySelector(".box2");
+
+  function checkColor() {
+    if (boxOne.classList.contains("orange")) { // contains : true
+      boxOne.classList.remove("orange");
+      boxOne.classList.add("skyblue");
+    } else if (boxOne.classList.contains("skyblue")) {
+      boxOne.classList.remove("skyblue");
+      boxOne.classList.add("orange");
+    } else {
+      boxOne.classList.add("orange");
+    }
+  }
+
+  function checkColor2() {
+    if (boxTwo.classList.contains("orange")) {
+      boxTwo.classList.remove("orange");
+      boxTwo.classList.add("skyblue");
+    } else if (boxTwo.classList.contains("skyblue")) {
+      boxTwo.classList.remove("skyblue");
+      boxTwo.classList.add("orange");
+    } else {
+      boxTwo.classList.add("orange");
+    }
+  }
+
+  boxTwo.addEventListener("click", checkColor2);
+
+</script>
+
+
+</html>
