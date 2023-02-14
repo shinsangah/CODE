@@ -24,18 +24,30 @@
   const boxEls = document.querySelectorAll(".box");
   console.log(boxEls);
 
-  // boxEls.forEach(function (boxEl, index) {
-  //   // console.log("boxEl", boxEl);
-  //   // console.log("index", index);
-  //   boxEl.classList.add(`box_${index + 1}`)
+  boxEls.forEach(function (boxEl, index) {
+    // console.log("boxEl", boxEl);
+    // console.log("index", index);
+    boxEl.classList.add(`box_${index + 1}`)
+  })
+
+  // boxEls.forEach(function (el, index) {
+    // console.log("el", boxEl);
+    // console.log("index", index);
+    // boxEl.classList.add(`box_${index + 1}`)
   // })
 
-  for (let i = 0; i < boxEls.length; i++) {
-    boxEls[i].classList.add(`box_${i + 1}`);
-  }
+  // for (let i = 0; i < boxEls.length; i++) {
+  //   boxEls[i].classList.add(`box_${i + 1}`);
+  // }
 
+  // foreach 거의 안쓴다.
   // foreach 외우기 귀찮으면.. for문으로도 이렇게 할 수 있다.
   // 자기가 쓸 수 있는걸 자신있게 편리하게 이용하면 된다. 다양하게 활용 가능..
+
+  // 전체를 순회하면서 뭔가 실행하면서 익명함수의 매개변수에
+  // 각각의 배열에 첫번째 매개변수부터 실행 ..
+
+
 </script>
 
 </html>

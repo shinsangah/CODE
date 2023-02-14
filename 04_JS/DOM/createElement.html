@@ -36,14 +36,12 @@
 
   const firstLi = document.createElement("li");
   const inputEl = document.createElement("input");
-  inputEl.setAttribute("type", "passworkd")
+  inputEl.setAttribute("type", "password")
   firstLi.appendChild(inputEl);
 
   const ulEl = document.querySelector("ul");
   ulEl.append(li);
-  ulEl.append(firstLi);
-
-  // 패스워드 입력창 맨 위로 안감..
+  ulEl.prepend(firstLi); // 맨 위로 감
 
 </script>
 

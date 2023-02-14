@@ -23,9 +23,11 @@
   console.log(listEl.parentNode); // 부모 요소 확인하기 (직계 부모)
 
   const ulEl = document.querySelector("ul");
-  console.log(ulEl.childNodes); // 뭔말이야.. 반복?
+  console.log(ulEl.childNodes);
   // 노드 이외에 있는 전부 다 배열로 만들어서 출력해준다.
-  console.log(ulEl.children); // children을 쓰는게 훨씬 편할 것 같다.
+  // 위에 0도 enter가 된 것이다. text 가 나오는게 엔터쳐서 나오는 것이다.
+  console.log(ulEl.children);
+  // children을 쓰면 다 출력되지 않고, 깔끔하게 바로 자식 노드만 나와서 편하다.
 
 </script>
 

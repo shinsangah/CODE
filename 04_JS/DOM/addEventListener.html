@@ -26,8 +26,8 @@
     box2.setAttribute("style", "background-color: orange")
   }
 
-  const addEvendBox = document.querySelector(".add");
-  addEvendBox.addEventListener("click", function () {
+  const addEventBox = document.querySelector(".add");
+  addEventBox.addEventListener("click", function () {
     alert("이벤트 리스너 발동!");
   })
 
@@ -42,6 +42,9 @@
   inputEl.addEventListener("blur", function () {
     alert("포커스 아웃");
   });
+
+  // focus, blur 마우스로 클릭해야 뜨고, 확인 눌러야 되고,
+  // 무한루프에 빠져서 둘이 동시에 쓰지 말라고 하심.
 
 </script>
 
