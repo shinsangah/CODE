@@ -12,8 +12,10 @@ function addList() {
     inputTask.setAttribute("placeholder", "내용을 입력하세요");
     return; //else안쓰고 상황종료시키기
   }
+
   const addLi = document.createElement("li");
   const checkBtn = document.createElement("input");
+
   checkBtn.setAttribute("type", "checkbox");
   //미리 addEventListener를 걸면 기억하고 실행
   checkBtn.addEventListener("click", function () {
@@ -23,6 +25,7 @@ function addList() {
       checkBtn.parentNode.setAttribute("style", "text-decoration:none");
     }
   });
+
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "삭제";
   // deleteBtn.addEventListener("click", function (e) {

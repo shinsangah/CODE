@@ -16,6 +16,7 @@ function addList() {
 
   const addLi = document.createElement("li"); // todolist 작성한 목록됨
   const checkBtn = document.createElement("input"); // 체크버튼
+  
   checkBtn.setAttribute("type", "checkbox");
   // 미리 addEventListender 걸어줘야 얘가 할 일을 기억하고 붙게 된다.
   checkBtn.addEventListener("click", function () {
