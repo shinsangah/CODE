@@ -1,0 +1,64 @@
+// RESET
+@import "reset";
+
+// 색상을 변수 선언해서 치환
+$body-bg: #eee;
+$wrap-border: #ddd;
+$wrap__item-bg: #fff;
+$wrap__item_h2 : #333;
+$wrap__tiem_p: #777;
+$btn-bg: orange; // 버튼 글로벌 레벨
+$btn-font: white;
+$wra__item-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+
+// Main
+body {
+  background-color: $body-bg; //위에 색상 선언했잖아. 쓸래? 하고 친절하게 하단에서도 나옴.
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+  border: 2px solid #ddd;
+
+  .item {
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: orange;
+    }
+
+    h2 {
+      font: bold 30px/1 "arial";
+      margin-bottom: 20px;
+      color: #333
+    }
+
+    p {
+      font: normal 16px/1.5 "arial";
+      /* font-size는 그대로 16px 이고, line-height가 1.5배 들어가는 배율로 24인 개념인 것이다. */
+      color: #777;
+    }
+
+    a {
+      display: block;
+      width: 100px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: #555;
+      color: white;
+      text-align: center;
+      font: bold 16px/30px;
+      /* line-height 30px 이다. 속기할 때 약속이다. */
+      margin-top: 20px;
+    }
+  }
+}

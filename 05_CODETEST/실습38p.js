@@ -1,5 +1,7 @@
 // 실습 p.38
 
+const { log } = require("console");
+
 const nums = [-1.23, 13, 14.52, -33.53, 30];
 
 // 주어진 배열에서 가장 큰 수와 작은 수의 찾아서 소수점을 버림 처리
@@ -22,3 +24,10 @@ console.log(Math.floor(Math.random() * 100));
 // 근데 0부터 쓰는거니까 Math.floor 쓰는게 나음.
 // 100조 분의 1 확률로 101도 뜬다. 100.9 를 곱해도 됨. 아예 101은 안되게 뜸.
 // 확률상으로 정확히 동일하진 않다. 확률상으로! 보통은 *100 많이 씀
+
+
+let sum = 0;
+for (let i = 0; i <nums.length; i++) {
+  sum += Math.abs(nums[i]);
+};
+console.log(sum / nums.length);
