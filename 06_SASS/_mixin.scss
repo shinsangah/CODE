@@ -1,0 +1,14 @@
+// 19강 p.197
+
+@mixin button($width: 100%, $bg-color: grey, $font-color: white) {
+  display: block;
+  width: $width;
+  height: 30px;
+  border-radius: 15px;
+  background-color: $bg-color;
+  color: $font-color;
+  text-align: center;
+  font: bold 16px/30px "arial";
+  /* line-height 30px 이다. 속기할 때 약속이다. */
+  margin-top: 20px;
+}
