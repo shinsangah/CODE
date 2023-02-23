@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.localStorage.setItem('name', '신상아');
+    console.log(window.localStorage.getItem('name'));
+
+    // window.localStorage.setItem('number', 1);
+    // const number = console.log(window.localStorage.getItem('number'));
+    // console.log(number);
+    // console.log(typeof number)
+    // 이거 왜 안먹지..
+
+    const sangah = {
+      name: "신상아",
+      isOld: false,
+      hobby: ["유튜브", "독서", "영화", "음악"]
+    }
+
+    const jsonsangah = JSON.stringify(sangah);
+    window.localStorage.setItem('sangah', jsonsangah);
+    console.log(window.localStorage)
+
+    const jsonsangahFromLocal = window.localStorage.getItem('sangah');
+    const objsangah = JSON.parse(jsonsangahFromLocal);
+    console.log(objsangah);
+
+    window.localStorage.setItem('pororo', "뽀로로에요!");
+    console.log(window.localStorage.getItem('pororo'));
+    window.localStorage.removeItem('pororo');
+    console.log(window.localStorage.getItem('pororo'));
+
+    window.localStorage.clear();
+    console.log(window.localStorage);
+
+    window.localStorage.setItem('sangah', '접니다')
+    window.localStorage.setItem('kangjun', '서강준')
+    console.log(window.localStorage.length);
+    console.log(window.localStorage.key(0));
+    console.log(window.localStorage.key(1));
+    console.log(window.localStorage.key(2));
+
+    window.localStorage.clear();
+    window.localStorage.setItem('kangjun', '서강준');
+    window.sessionStorage.setItem('sangah', '신상아')
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

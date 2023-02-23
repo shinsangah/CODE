@@ -1,0 +1,30 @@
+<!-- 실습, localStorage 사용하기 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.localStorage.setItem('sangah', '신상아')
+    window.localStorage.setItem('seulgi', '구슬기')
+    window.localStorage.setItem('inyoung', '최인영')
+    window.localStorage.setItem('yurim', '최유림')
+    window.localStorage.setItem('kangjun', '서강준')
+
+    for (let i = 0; i < window.localStorage.length; i++) {
+      const key = window.localStorage.key(i);
+      const value = window.localStorage.getItem(key);
+      console.log(`${key} 의 한국이름은 ${value} 입니다!`);
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
